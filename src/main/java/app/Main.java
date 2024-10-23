@@ -12,7 +12,7 @@ public class Main {
      */
     public static void main(String[] args) {
         final AppBuilder appBuilder = new AppBuilder();
-        // TODO: add the Logout Use Case to the app using the appBuilder
+        // TODO: add the Logout Use Case to the app using the appBuilder Done.
         final JFrame application = appBuilder
                                             .addLoginView()
                                             .addSignupView()
@@ -20,8 +20,8 @@ public class Main {
                                             .addSignupUseCase()
                                             .addLoginUseCase()
                                             .addChangePasswordUseCase()
+                                            .addLogoutUseCase()
                                             .build();
-
         application.pack();
         application.setVisible(true);
     }
